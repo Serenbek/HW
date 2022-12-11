@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form">
+          <form>
+            <fieldset>
+              <legend><h1>Pay count</h1></legend>
+              <label for="1"> Total score </label>
+              <input name="1" id="totalScore" type="number" /> <br />
+              <label for="2">Guests amount</label>
+              <input name="2" id="guestsAmount" type="number" /> <br />
+
+              <label for="3">Commission</label>
+              <select name="3" id="commission">
+                <option value="0.3">30%</option>
+                <option value="0.2">20%</option>
+                <option value="0.15">15%</option>
+                <option value="0.1">10%</option>
+              </select>
+              <br />
+
+              <button type="button" id="button">Calculate</button> <br />
+              <h4>Tips for 1 person</h4>
+              <div id="result"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+    <br />
+    <hr />
+    <br />
+    <section class="cubs">
+      <div class="container">
+        <div id="cub1"></div>
+        <div id="cub2"></div>
+        <div id="cub3"></div>
+      </div>
+    </section>
+
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
